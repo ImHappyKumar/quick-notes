@@ -1,0 +1,61 @@
+/* NAVBAR */
+.navbar-nav::after {
+  content: "";
+  display: block;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);;
+  margin: 1px 12px;
+}
+.navbar-nav .nav-item .nav-link::after {
+  position: relative;
+  content: "";
+  display: block;
+  background: #00a82d;
+  height: 2px;
+  border-radius: 2px;
+  transition: width 0.3s ease-out;
+  width: 0;
+}
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+.navbar-nav .nav-item .active {
+  color: #00a82d !important;
+}
+#login-btn {
+  background: none !important;
+  border: none !important;
+}
+#login-btn:hover {
+  color: #00a82d;
+}
+#signup-btn {
+  background: none !important;
+  color: #00a82d;
+}
+#signup-btn:hover {
+  border-color: white;
+  color: white;
+}
+
+#logout-btn {
+  background: none !important;
+  color: #00a82d;
+}
+#logout-btn:hover {
+  border-color: white;
+  color: white;
+}
+
+
+/* UTILITY CLASSES */
+.form-control:focus, .btn-close:focus {
+  border-color: #00a82d !important;
+  box-shadow: 0 0 0 0.25rem rgba(0, 168, 45, .25) !important;
+}
+i:hover {
+  color: #00a82d;
+}
+.btn-primary {
+  background: #00a82d !important;
+  border-color: #00a82d !important;
+}
