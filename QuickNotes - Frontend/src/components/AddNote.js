@@ -6,11 +6,12 @@ const AddNote = () => {
     const context = useContext(noteContext);
     const { addNote } = context;
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
     const onSubmit = (data) => {
         const { title, description, tag } = data;
         addNote(title, description, tag);
+        reset();
     };
 
     return (
