@@ -24,7 +24,7 @@ Before you begin, ensure you have the following installed:
     ```
 2. Navigate to the project directory:
     ```
-    cd QuickNotes
+    cd quick-notes
     ```
 3. Install dependencies for the client (React) and server (Node.js) applications:
     ```
